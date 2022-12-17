@@ -5,9 +5,10 @@ import AutoPlay from './plugins/AutoPlay.js';
 const node = (id) => document.querySelector(id);
 //NODOS A MANIPULAR
 //etiqueta video
-const video = node(".movie");
+const video = node(".video-player");
 //etiqueta de botón de play
-const btnPlay = node("#movie-play");
+const btnPlay = node("#video-play");
+const btnMuted = node("#video-muted");
 
 //Objeto reproductor de video
 const player = new MediaPlayer({video, plugin:[new AutoPlay(video)]});
@@ -17,3 +18,10 @@ btnPlay.addEventListener("click", ()=>{
     player.video.paused ? player.playVideo() : player.pauseVideo();
    
 });
+btnMuted.addEventListener("click", ()=>{
+    console.log(player.video.muted)
+    //Si el video está silenciado, entonces activa el sonido, de lo contrario lo silencia
+    player.video.muted ? player.video.muted = false : player.video.muted = true;
+   
+});
+
