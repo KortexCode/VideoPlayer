@@ -5,7 +5,7 @@ export default class MediaPlayer{
         this.video = config.video;
         this.plugins = config.plugin || [];
         //cualquier instancia de esta clase llamará a la función iniciadora de plugins apenas sea declarada
-        this.initPlugins();
+        this._initPlugins();
     }
     //Métodos de la clase
     playVideo(){
@@ -21,9 +21,24 @@ export default class MediaPlayer{
         this.video.unmuted = true;
     }
     //Este método inicializa todos los plugins asociados con el reproductor de video
-    initPlugins(){
+    _initPlugins(){
+        const player = {
+            conso: console.log(this),
+            play: () => this.playVideo(),
+            pause: () => this.pauseVideo(),
+            video: this.video,
+            get muted(){
+                console.log(this)
+                return this.video.muted;
+            },
+            set muted(value){
+                this.video.muted = value;
+            }
+
+        }
+        player.conso;
         this.plugins.forEach(plugin => {
-            plugin.run(this);
+            plugin.run(player);
         });
     }
 

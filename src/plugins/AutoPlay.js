@@ -4,10 +4,10 @@ export default class AutoPlay{
     constructor(){ 
         
     }
-    //Se crea la función run, esta función recibirá la clase MediaPlayer como parámetro
+     //Enviamos un objeto "player" que contiene las propiedades y métodos de la clase MediaPlayer
     run(player){
-        //la clase MediaPlayer puede ejecutar sus funciones internas
-        player.muted();
-        player.playVideo();
+        //Auto play busca que el video esté en muted para poderlo reproducir
+        !player.muted ? player.muted = true : false//si el video no está muted, se establece en muted
+        player.play();
     }
 }
