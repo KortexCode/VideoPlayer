@@ -10,4 +10,4 @@ export default class AutoPlay{
         !player.muted ? player.muted = true : false//si el video no está muted, se establece en muted
         player.play();
     }
-}
+} 

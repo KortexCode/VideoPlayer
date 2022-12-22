@@ -1,5 +1,6 @@
 import MediaPlayer from './MediaPlayer.js';
 import AutoPlay from './plugins/AutoPlay.js';
+import AutoPause from './plugins/AutoPause.js';
 
 //Se define una constante que guarda un selector de nodos en el html
 const node = (id) => document.querySelector(id);
@@ -11,7 +12,7 @@ const btnPlay = node("#video-play");
 const btnMuted = node("#video-muted");
 
 //Objeto reproductor de video
-const player = new MediaPlayer({video, plugin:[new AutoPlay(video)]});
+const player = new MediaPlayer({video, plugin:[new AutoPlay(video), new AutoPause(video)]});
 //Al darle click al botón ejecutará accione de reproducir o pausar el video
 btnPlay.addEventListener("click", ()=>{
     //Si está pausado reproduce, si está reproduciendo entonces lo pausa.

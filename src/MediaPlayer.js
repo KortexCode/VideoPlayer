@@ -22,13 +22,13 @@ export default class MediaPlayer{
     }
     //Este método inicializa todos los plugins asociados con el reproductor de video
     _initPlugins(){
+        //El uso de los setter y getter es para evitar mandar el objeto MediaPlayer al AutoPlaying
+        //porque no queremos que AutoPlaying tenga a disposición el uso de todas las propiedades de MediaPlayer
         const player = {
-            conso: console.log(this),
             play: () => this.playVideo(),
             pause: () => this.pauseVideo(),
             video: this.video,
             get muted(){
-                console.log(this)
                 return this.video.muted;
             },
             set muted(value){
@@ -36,8 +36,8 @@ export default class MediaPlayer{
             }
 
         }
-        player.conso;
         this.plugins.forEach(plugin => {
+            console.log(player);
             plugin.run(player);
         });
     }
