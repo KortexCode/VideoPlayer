@@ -29,6 +29,14 @@ export default class AutoPause{
         
         //Observamos la etiqueta video de la página
         observer.observe(this.video);
+
+        document.addEventListener("visibilitychange", ()=>{
+            //Si el estado es visible hará play al video, de lo contrario será pause
+            if (document.visibilityState === "visible")
+                player.play();
+            else
+                player.pause();
+        })
         
     }
 }
