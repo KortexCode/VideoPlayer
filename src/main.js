@@ -27,6 +27,9 @@ btnMuted.addEventListener("click", ()=>{
 });
 
 //SERVICE WORKER
+//Dentro del objeto navigator hay una propiedad llamada serviceWorker y dentro del prototy
+//Tiene una propiedad register; con ella vamos a registrar un serviworker el cual será creado
+//En el archivo sw.js
 if("serviceWorker" in navigator){
     navigator.serviceWorker.register("../sw.js").catch(error =>{
         return console.log(error.message);

@@ -25,7 +25,7 @@ async function precache(){
         "/src/main.js",
         "/src/plugins/AutoPlay.js",
         "/src/plugins/AutoPause.js",
-        "/src/assets/bdr.mkv"
+        "/src/assets/btr.mp4"
     ])
 }
 
