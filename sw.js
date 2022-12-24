@@ -17,7 +17,7 @@ async function precache(){
     const cache = await caches.open("v1");
     return cache.addAll([
         //Aquí añadimos varios recursos
-        "/",
+       /*  "/",
         "/index.html",
         "/src/normalize.css",
         "/src/index.css",
@@ -25,7 +25,7 @@ async function precache(){
         "/src/main.js",
         "/src/plugins/AutoPlay.js",
         "/src/plugins/AutoPause.js",
-        "/src/assets/btr.mp4"
+        "/src/assets/btr.mp4" */
     ])
 }
 
