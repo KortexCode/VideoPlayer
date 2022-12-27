@@ -12,17 +12,17 @@ interface Subject{
 }
 
 class BitcoinPrice implements Subject{
-    observer: Observer[] = [];
+    observer: Observer[] = [];//Aquí se guardan las instancias de PriceDisplay
 
     constructor(input:HTMLInputElement){
         
         input.addEventListener("input", ()=>{
             this.notify(input.value);
-        })
+        });
     }
 
     subscribe(observer:Observer){
-        console.log(observer);
+        console.log("QUE TIPO", observer);
 
         this.observer.push(observer);
         console.log(this.observer)
@@ -57,3 +57,4 @@ const value = new BitcoinPrice(input);//2 Se crea la instancia de BitcoinPrice
 //Esta recibe como argumento el valor actual del input
 
 value.subscribe(display);
+value.unSubscribe(display);
