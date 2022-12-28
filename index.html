@@ -4,29 +4,42 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+        <!-- CSS -->
         <link rel="stylesheet" href="./src/normalize.css">
         <link rel="stylesheet" href="./src/index.css">
-        <title>Document</title>
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+        
+        <title>MediaPlayer</title>
     </head>
     <body>
-        <header>
-            <h1>Platzi Media Player</h1>
+        <header id="nav-bar">
+            <h1>Bocchi Media Player</h1>
             <p>An extensible media player</p>
         </header>
         <main class="container">
-            <video height="600px" class="video-player">
-                <source src="./src/assets/btr.mp4">
-            </video>
-            <button id="video-play">Play/Pause</button>
-            <button id="video-muted">muted</button>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus id maxime quia, perferendis hic nulla. Recusandae tempora ad illo ex possimus distinctio architecto totam. Deleniti eligendi perspiciatis temporibus deserunt.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus id maxime quia, perferendis hic nulla. Recusandae tempora ad illo ex possimus distinctio architecto totam. Deleniti eligendi perspiciatis temporibus deserunt.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus id maxime quia, perferendis hic nulla. Recusandae tempora ad illo ex possimus distinctio architecto totam. Deleniti eligendi perspiciatis temporibus deserunt.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus id maxime quia, perferendis hic nulla. Recusandae tempora ad illo ex possimus distinctio architecto totam. Deleniti eligendi perspiciatis temporibus deserunt.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus id maxime quia, perferendis hic nulla. Recusandae tempora ad illo ex possimus distinctio architecto totam. Deleniti eligendi perspiciatis temporibus deserunt.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus id maxime quia, perferendis hic nulla. Recusandae tempora ad illo ex possimus distinctio architecto totam. Deleniti eligendi perspiciatis temporibus deserunt.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus id maxime quia, perferendis hic nulla. Recusandae tempora ad illo ex possimus distinctio architecto totam. Deleniti eligendi perspiciatis temporibus deserunt.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus id maxime quia, perferendis hic nulla. Recusandae tempora ad illo ex possimus distinctio architecto totam. Deleniti eligendi perspiciatis temporibus deserunt.</p>
+            <section class="video-container">
+                <video class="video-player">
+                    <source src="./src/assets/btr.mp4">
+                </video>
+            </section>
+            <div id="btn-container">
+                <button id="video-play">Play/Pause</button>
+                <button id="video-muted">muted</button>
+            </div>
+            <div id="comment-container">
+                <h3>Comments:</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus id maxime quia, perferendis hic nulla. Recusandae tempora ad illo ex possimus distinctio architecto totam. Deleniti eligendi perspiciatis temporibus deserunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus id maxime quia, perferendis hic nulla. Recusandae tempora ad illo ex possimus distinctio architecto totam. Deleniti eligendi perspiciatis temporibus deserunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus id maxime quia, perferendis hic nulla. Recusandae tempora ad illo ex possimus distinctio architecto totam. Deleniti eligendi perspiciatis temporibus deserunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus id maxime quia, perferendis hic nulla. Recusandae tempora ad illo ex possimus distinctio architecto totam. Deleniti eligendi perspiciatis temporibus deserunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus id maxime quia, perferendis hic nulla. Recusandae tempora ad illo ex possimus distinctio architecto totam. Deleniti eligendi perspiciatis temporibus deserunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus id maxime quia, perferendis hic nulla. Recusandae tempora ad illo ex possimus distinctio architecto totam. Deleniti eligendi perspiciatis temporibus deserunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus id maxime quia, perferendis hic nulla. Recusandae tempora ad illo ex possimus distinctio architecto totam. Deleniti eligendi perspiciatis temporibus deserunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus id maxime quia, perferendis hic nulla. Recusandae tempora ad illo ex possimus distinctio architecto totam. Deleniti eligendi perspiciatis temporibus deserunt.</p>
+            </div>
         </main>
     </body>
     <script src="https://unpkg.com/fast-levenshtein@2.0.6/levenshtein.js"></script>
