@@ -4,7 +4,8 @@
   "description": "Proyecto en desarrollo, en esta aplicación se desarrollará un Media Player",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html ejercicios/**/*.html"
+    "start": "parcel index.html ejercicios/**/*.html",
+    "deploy" : "gh-pages -d src"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/Maeno323/platziVideo#readme",
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "parcel-bundler": "^1.8.1",
     "typescript": "^4.9.4"
   },
