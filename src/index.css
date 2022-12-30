@@ -41,8 +41,8 @@ video{
 }
 /* Annuences */
 .ads {
-  padding: 4px;
-  padding-right: 8px;
+  padding: 12px;
+  border-radius: 8px;
   background: rgba(255, 255, 255, 0.562);
   width: 70%; 
   position: absolute;
@@ -99,4 +99,12 @@ button{
   font-size: 24px;
   font-weight: 700;
   color: #f85f8d;
+}
+
+@media(max-width:680px){
+  .ads {
+    bottom: -250px;
+    background: rgba(241, 159, 241, 0.993);
+    
+  }
 }
