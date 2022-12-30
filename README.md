@@ -27,5 +27,5 @@ npm start
 ```
 
 Puedes acceder al index.html principal escribiendo en el navegador:
-localhost:1234/index.html
+localhost:1234/src/index.html
 
