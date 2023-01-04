@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel index.html ejercicios/**/*.html",
     "builtToDeploy": "tsc website/src/*.ts /website/src/**/.ts website/src/plugins/*.ts website/src/plugins/**/*.ts --outDir toDeploy",
-    "deploy": "gh-pages -d website/"
+    "deploy": "gh-pages -d toDeploy/"
   },
   "repository": {
     "type": "git",
