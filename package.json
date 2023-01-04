@@ -4,8 +4,8 @@
   "description": "Proyecto en desarrollo, en esta aplicación se desarrollará un Media Player",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html ejercicios/**/*.html"
-
+    "start": "parcel index.html ejercicios/**/*.html",
+    "deploy": "gh-pages -d dist/"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,8 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
-    "fast-levenshtein": "^3.0.0"
+    "fast-levenshtein": "^3.0.0",
+    "gh-pages": "^4.0.0"
   },
   "browserslist": [
     "last 1 Chrome version"
