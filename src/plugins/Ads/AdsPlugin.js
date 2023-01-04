@@ -1,4 +1,5 @@
 "use strict";
+var exports = {};
 exports.__esModule = true;
 var Ads_1 = require("./Ads");
 var AdsPlugin = /** @class */ (function () {

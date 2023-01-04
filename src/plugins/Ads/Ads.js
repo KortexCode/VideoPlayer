@@ -8,6 +8,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     }
     return to.concat(ar || Array.prototype.slice.call(from));
 };
+var exports = {};
 exports.__esModule = true;
 var ALL_ADS = [
     {

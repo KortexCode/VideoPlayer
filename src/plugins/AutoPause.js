@@ -1,4 +1,5 @@
 "use strict";
+var exports = {};
 exports.__esModule = true;
 //y así poder tipar con él.
 var AutoPause = /** @class */ (function () {

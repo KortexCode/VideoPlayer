@@ -1,4 +1,5 @@
 "use strict";
+var exports = {};
 exports.__esModule = true;
 var MediaPlayer_1 = require("./MediaPlayer.js");
 var AutoPlay_1 = require("./plugins/AutoPlay.js");

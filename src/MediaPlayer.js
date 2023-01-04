@@ -1,4 +1,5 @@
 "use strict";
+var exports = {};
 exports.__esModule = true;
 //CLASE MEDIA PLAYER
 //Se crea una clase la cual manejará el comportamiento del reproductor de video.
