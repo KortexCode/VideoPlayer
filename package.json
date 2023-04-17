@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KortexCode/platziVideo.git"
+    "url": "git+https://github.com/KortexCode/VideoPlayer.git"
   },
   "keywords": [],
   "author": "Cesar Cortes",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KortexCode/platziVideo/issues"
+    "url": "https://github.com/KortexCode/VideoPlayer/issues"
   },
-  "homepage": "https://github.com/KortexCode/platziVideo#readme",
+  "homepage": "https://github.com/KortexCode/VideoPlayer",
   "devDependencies": {
     "parcel-bundler": "^1.8.1",
     "typescript": "^5.0.4"
