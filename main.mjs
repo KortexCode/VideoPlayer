@@ -1,27 +1,23 @@
-"use strict";
-var exports = {};
-var require = {};
-exports.__esModule = true;
-var MediaPlayer_1 = require("./MediaPlayer.js");
-var AutoPlay_1 = require("./plugins/AutoPlay.js");
-var AutoPause_1 = require("./plugins/AutoPause.js");
-var AdsPlugin_1 = require("./plugins/Ads/AdsPlugin.js");
+import MediaPlayer from './MediaPlayer.js';
+import AutoPlay from './plugins/AutoPlay.js';
+import AutoPause from './plugins/AutoPause.js';
+import AdsPlugin from './plugins/ads/AdsPlugin.js';
 //Se define una constante que guarda un selector de nodos en el html
-var node = function (id) { return document.querySelector(id); };
+const node = (id) => document.querySelector(id);
 //NODOS A MANIPULAR
 //etiqueta video
-var video = node(".video-player");
+const video = node(".video-player");
 //etiqueta de botón de play
-var btnPlay = node("#video-play");
-var btnMuted = node("#video-muted");
+const btnPlay = node("#video-play");
+const btnMuted = node("#video-muted");
 //Objeto reproductor de video
-var player = new MediaPlayer_1["default"]({ video: video, plugin: [new AutoPlay_1["default"](), new AutoPause_1["default"](video), new AdsPlugin_1["default"]()] });
+const player = new MediaPlayer({ video, plugin: [new AutoPlay(), new AutoPause(video), new AdsPlugin()] });
 //Al darle click al botón ejecutará acción de reproducir o pausar el video
-btnPlay.addEventListener("click", function () {
+btnPlay.addEventListener("click", () => {
     //Si está pausado reproduce, si está reproduciendo entonces lo pausa.
     player.video.paused ? player.playVideo() : player.pauseVideo();
 });
-btnMuted.addEventListener("click", function () {
+btnMuted.addEventListener("click", () => {
     //Si el video está silenciado, entonces activa el sonido, de lo contrario lo silencia
     player.video.muted ? player.video.muted = false : player.video.muted = true;
 });
@@ -30,7 +26,7 @@ btnMuted.addEventListener("click", function () {
 //Tiene una propiedad register; con ella vamos a registrar un serviworker el cual será creado
 //En el archivo sw.js
 if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("../sw.js")["catch"](function (error) {
+    navigator.serviceWorker.register("../sw.js").catch(error => {
         return console.log(error.message);
     });
 }
