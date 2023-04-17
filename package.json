@@ -6,22 +6,22 @@
   "scripts": {
     "start": "parcel index.html ejercicios/**/*.html",
     "builtToDeploy": "tsc website/src/*.ts /website/src/**/.ts website/src/plugins/*.ts website/src/plugins/**/*.ts --outDir toDeploy",
-    "deploy": "gh-pages -d toDeploy/"
+    "deploy": "gh-pages -d dist/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Maeno323/platziVideo.git"
+    "url": "git+https://github.com/KortexCode/platziVideo.git"
   },
   "keywords": [],
   "author": "Cesar Cortes",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Maeno323/platziVideo/issues"
+    "url": "https://github.com/KortexCode/platziVideo/issues"
   },
-  "homepage": "https://github.com/Maeno323/platziVideo#readme",
+  "homepage": "https://github.com/KortexCode/platziVideo#readme",
   "devDependencies": {
     "parcel-bundler": "^1.8.1",
-    "typescript": "^4.9.4"
+    "typescript": "^5.0.4"
   },
   "dependencies": {
     "fast-levenshtein": "^3.0.0",
