@@ -22,11 +22,9 @@ export default class AutoPause{
             const isVisible = entry.intersectionRatio >= ratio.threshold;
             //Si es mayor, hará play; si menor, hará pause.
             if(isVisible){
-                console.log("entro a play")
                 player.playVideo();
             }
             else{
-                console.log("entro a pause")
                 player.pauseVideo(); 
             }
             
