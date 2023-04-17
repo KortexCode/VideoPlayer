@@ -1,0 +1,112 @@
+html{
+  font-family:'Ubuntu', sans-serif;
+}
+
+/* HEADER */
+#nav-bar{
+  padding: 8px;
+  border-bottom: 3px solid #fa7da2;
+  background-color: #ee95b0;
+}
+#nav-bar h1{
+  margin-top: 0;
+  margin-bottom: 12px;
+  padding-top: 4px;
+  text-align: center;
+  color: #c54068;
+}
+#nav-bar p{
+  margin-bottom: 0;
+  font-weight: 700;
+  text-align: center;
+
+}
+
+/* BODY */
+body{
+  background-color: #FFC0CB;
+}
+.video-container{
+  margin-top: 12px;
+}
+video{
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+ /*  padding:12px 0 12px 0; */
+  border: 3px solid #fa7da2;
+}
+.videoContainer{
+  width: 100%;
+}
+/* Annuences */
+.ads {
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.562);
+  width: 70%; 
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ads__link {
+  display: flex;
+  color: inherit;
+  text-decoration: inherit;
+}
+.ads__img {
+  width: 80px;
+  min-width: 80px;
+  height: 80px;
+  margin-right: 16px;
+}
+.ads__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ads__title {
+  margin: 0;
+}
+.ads__body {
+  margin: 0;
+}
+
+/* BUTTONS */
+#btn-container{
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+button{
+  width:110px;
+  margin-top: 8px;
+  padding: 12px;
+  border: 2px solid #c54068;
+  border-radius: 8px;
+  font-weight: 700;
+  color:#c54068;
+  background-color: #f8a7bffd;
+}
+
+/* COMMENTS */
+#comment-container{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+#comment-container h3{
+  font-size: 24px;
+  font-weight: 700;
+  color: #f85f8d;
+}
+
+@media(max-width:680px){
+  .ads {
+    bottom: -250px;
+    background: rgba(241, 159, 241, 0.993);
+    
+  }
+}
+
+/*# sourceMappingURL=/src.f41506f2.css.map */
