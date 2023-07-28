@@ -1,0 +1,2 @@
+self.addEventListener("install",(t=>{t.waitUntil(async function(){return(await caches.open("v1")).addAll([])}())})),self.addEventListener("fetch",(t=>{const e=t.request;"GET"===e.method&&t.respondWith(async function(t){const e=await caches.open("v1"),n=await e.match(t);return console.log("respuesta",n),n||await fetch(t)}(e))}));
+//# sourceMappingURL=sw.js.map
