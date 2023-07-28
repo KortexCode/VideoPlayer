@@ -2,6 +2,8 @@ import MediaPlayer from './MediaPlayer';
 import AutoPlay from './plugins/AutoPlay';
 import AutoPause from './plugins/AutoPause';
 import AdsPlugin from './plugins/Ads/AdsPlugin';
+import './normalize.css';
+import './index.css';
 
 
 //Se define una constante que guarda un selector de nodos en el html
