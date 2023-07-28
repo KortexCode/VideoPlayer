@@ -4,8 +4,8 @@
   "description": "Proyecto en desarrollo, en esta aplicación se desarrollará un Media Player",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html ejercicios/**/*.html",
-    "builtToDeploy": "tsc website/src/*.ts /website/src/**/.ts website/src/plugins/*.ts website/src/plugins/**/*.ts --outDir toDeploy",
+    "start": "parcel ./toDeploy/index.html",
+    "builtToDeploy": "tsc ./src/*.ts ./src/**/*.ts ./src/plugins/*.ts ./src/plugins/**/*.ts --outDir toDeploy",
     "deploy": "gh-pages -d dist/"
   },
   "repository": {
